@@ -79,14 +79,14 @@
                             <form method="post" action="/user/update" id="update">
                                 @csrf
                                 <div class="row mb-3">
-                                    <div class="col">
+                                    <div class="col-12 col-md-6">
                                         <label for="userId">ID do usuário: </label>
                                         <select class="custom-select" id="userId" name="userId">
                                             <option value="" selected>Id</option>
                                             <option v-for="user in users" :value="user.id">@{{ user.id }} - @{{ user.name }}</option>
                                         </select>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-12 mt-3 col-md-6 mt-md-0">
                                         <label for="userName">Novo nome: </label>
                                         <input type="text" class="form-control" id="userName" name="userName" placeholder="Nome">
                                     </div>
